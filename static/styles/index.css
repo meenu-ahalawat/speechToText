@@ -1,0 +1,219 @@
+body{
+  width: 100%;
+  margin: 0;
+  margin-top: -57px;
+  padding: 0;
+}
+
+h1, p, input{
+    font-family: 'Lato', sans-serif;
+}
+
+#spectrum-background {
+  position: relative;
+  background: linear-gradient(90deg, #f7c2de, #d3b3f1);
+  width: 100%;
+  height: 100vh;
+ 
+}
+
+
+.main-content-header .mainheading{
+  padding-top: 90px;
+  font-size: 80px;
+}
+.main-content-header h1{
+  font-family: 'Arial Narrow Bold';
+  font-size: 40px;
+  color: rgb(115 13 37 / 93%);
+  font-weight: 700;
+  padding-top: 0;
+}
+.main-content-header p{
+  max-width: 70%;
+  padding-top: 70px;
+  font-size: 15px;
+  display: inline-flex;
+  
+}
+
+
+a {
+  text-decoration: inherit;
+  padding: 10px 17px; 
+  display: inline-block;
+  /* margin-top: 80px; */
+}
+.btn-audio{
+  font-family: Georgia;
+  font-size: 20px;
+  font-weight: 100;
+  background-color: rgb(109 175 32 / 99%);
+  color: white;
+  border-radius: 5px;
+  border: none;
+  margin-right: 25px;
+}
+.btn-speak{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 20px;
+  font-weight: 100;
+  background-color: rgb(109 175 32 / 99%);
+  color: white;
+  border-radius: 5px;
+  border: none;
+  
+  margin-left: 25px;
+}
+
+.row{
+  padding-top: 30px;
+}
+.row .audio-nav{
+  background-color: rgb(139 247 78 / 60%);
+  width: 100%;
+  margin-left: -20px;
+  font-size: 20px;
+  font-weight: 700;
+  margin-top: 40px;
+}
+.audio-nav a{
+  
+  color: rgb(38 24 238);;
+}
+
+
+#speechcontainerLeft {
+  margin-top: -50px;
+}
+#speechcontainerLeft h1{
+color:rgb(87, 8, 32);
+font-family: 'Times New Roman';
+font-size: 150px;
+font-weight: 600;
+}
+#speechcontainerLeft h2{
+color:rgb(50, 103, 173);
+font-family: 'Times New Roman';
+font-weight: 600;
+margin-top: -20px;;
+}
+#leftHead{
+    margin:20px;
+}
+
+
+#submitButton{
+  background-color: rgb(109 175 32 / 99%);
+  color: white;
+  border-radius: 5px;
+  border: none;
+  padding: 10px 30px;
+  margin-top: 30px;
+}
+
+#submitButton:hover{
+    cursor: pointer;
+}
+
+#speechTranscriptLeft{
+    margin-top: 20px;
+    
+}
+
+#speechTextLeft{
+    font-size: 18px;
+    width: 900px;
+    
+}
+
+
+
+
+.row{
+  padding: 40px;
+}
+.row .speak-nav{
+  background-color: rgb(139 247 78 / 60%);
+  width: 100%;
+  margin-left: -20px;
+  font-size: 20px;
+  font-weight: 700;
+  margin-top: 40px;
+}
+.speak-nav a{
+  color: rgb(38 24 238);;
+}
+
+
+#speechcontainerRight {
+    margin: 30px;
+}
+#speechcontainerRight h1{
+  color:rgb(87, 8, 32);
+  font-family: 'Times New Roman';
+  font-size: 50px;
+  font-weight: 700;
+}
+#speechcontainerRight h2{
+  color:rgb(9 17 121 / 70%);
+  font-family: 'Times New Roman';
+  font-weight: 700;
+}
+
+#rightHead{
+    margin:20px;
+}
+
+#button_buttons{
+    background-color: rgb(109 175 32 / 99%);
+    color: white;
+    border-radius: 5px;
+    border: none;
+    padding: 10px 30px;
+    margin-top: -20px;
+}
+
+#button_buttons:hover{
+    cursor: pointer;
+}
+
+#speechTranscriptRight{
+    margin-top: 20px;
+    
+}
+
+#speechTextRight{
+    font-size: 18px;
+    width: 500px;  
+}
+#speechTextRight{
+  text-align: justify;
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: rgb(68, 61, 73);
+  color: white;
+  text-align: center;
+ 
+}
+
+
+@media screen and (min-width: 60%) {
+
+}
+/* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+@media screen and (max-width: 40%) {
+  #spectrum-background {
+    position: relative;
+    background: linear-gradient(90deg, #f7c2de, #d3b3f1);
+    width: 100%;
+    height: 150vh;
+   
+  }
+}
+

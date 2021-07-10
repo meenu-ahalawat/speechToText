@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voice to Text</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/index.css') }}" />
+   
+</head>
+<body>
+    <div id="spectrum-background">
+    <nav>
+        <div class="row">
+            <ul class="audio-nav">
+                
+                <a class="homeAudio" href="/">HOME</a>
+                <a class="homespeak" href="/speak">SPEAK</a>
+            </ul>          
+    </div>
+  </nav>
+
+    <div id="speechContainerLeft">
+        <center>
+        <h1 style="color: rgb(87, 8, 32);font-family: 'Times New Roman'; font-size: 50px; margin-top: -20px;">
+            Speech to Text using Python
+        </h1>
+        
+        <h2 id="leftHead" style="color: rgb(9 17 121 / 70%); margin-top: -20px;">
+            Upload New File!
+        </h2>
+        
+        <form method="post" enctype="multipart/form-data">
+            
+            <input type="file" style="background-color: rgb(192, 146, 224); border-radius: 0.1rem; cursor: pointer; padding: 0.3rem;" name="file"/>
+            <br>
+            <input type="submit" id="submitButton" value="Transcribe" />
+        </form>
+        {% if transcript != "" %}
+        <div id="speechTranscriptLeft">
+            <h3>Transcript:</h3> 
+            <p id="speechTextLeft">{{ transcript }}</p>
+        </div>
+        {% endif %}
+    </center>
+    </div>
+    
+    <div class="footer">
+        <p>&copy 2020 by<a style="color: rgb(139, 236, 110);"href="https://www.linkedin.com/in/meenu-singh04/">Meenu Ahalawat</a>All rights reserved</p>
+      </div>
+
+</body>
+
+</html>

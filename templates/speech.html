@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voice to Text</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/index.css') }}" />
+   
+</head>
+<body>
+    <div id="spectrum-background">
+    <!-- Background -->
+  
+    <nav>
+            <div class="row">
+                <ul class="speak-nav">
+                    
+                    <a class="homeSpeak" href="/">HOME</a>
+                    <a class="audioSpeak" href="/audio">AUDIO</a>
+                   
+                </ul>               
+        </div>
+      </nav>
+
+    <div id="speechcontainerRight">
+        <center>
+            <h1>
+                Speech to Text using Python
+            </h1>
+        </center>
+        <center>
+        <h2 id="rightHead">
+            Click Record and start saying!
+        </h2>
+        <form method="post" enctype="multipart/form-data">
+            <input type="hidden" name="csrfmiddlewaretoken" value="{{ csrf_token }}">
+            <br>
+            
+            <button id="button_buttons">Record</button>
+            
+        </form>
+        {% if data != "" %}
+        <div id="speechTranscriptRight">
+            <h3>Transcript:</h3>
+            <p id="speechTextRight">{{ data }}</p>
+        </div>
+        {% endif %}
+        </center>
+    </div>
+</div>
+
+<div class="footer">
+    <p>&copy 2020 by<a style="color: rgb(139, 236, 110);"href="https://www.linkedin.com/in/meenu-singh04/">Meenu Ahalawat</a>All rights reserved</p>
+  </div>
+</body>
+</html>
